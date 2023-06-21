@@ -1,0 +1,2 @@
+aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId, State.Name, InstanceType, PrivateIpAddress, join(`, `,Tags[?Key==`Name`].Value || [`N/A`])]' --output table
+
