@@ -1,0 +1,1 @@
+aws ecs execute-command --region us-east-1 --cluster hsm-prod --task 6b391faaf35e49119f64cf8d53a29bba --command "/bin/sh" --interactive
